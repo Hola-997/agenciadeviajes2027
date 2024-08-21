@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/',  'welcome'); 
+Route::view('/','welcome')->name('inicio');
 
-Route::resource("productos", App\Http\Controllers\ProductoController::class);
-
+Route::resource('/categorias',CategoriaController::class);  //Crea 7 rutas para el CRUD de categorias
+Route::resource('/productos',ProductoController::class); //Crea 7 rutas para el CRUD de productos
