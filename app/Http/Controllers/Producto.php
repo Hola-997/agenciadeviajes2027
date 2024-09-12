@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Models\Producto;
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class Producto extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +16,19 @@ class AuthController extends Controller
     }
 
     /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        Producto::create($request->all());
-        return redirect()->route('productos.index');
+        //
     }
 
     /**
@@ -34,12 +40,19 @@ class AuthController extends Controller
     }
 
     /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Producto $producto)
+    {
+        //
+    }
+
+    /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, Producto $producto)
     {
-        $producto->update($request->all());
-        return redirect()->route('productos.index');
+        //
     }
 
     /**
@@ -47,7 +60,6 @@ class AuthController extends Controller
      */
     public function destroy(Producto $producto)
     {
-        $producto->delete();
-        return redirect()->route('productos.index');
+        //
     }
 }
