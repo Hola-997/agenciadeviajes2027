@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\ClienteController;
-
-
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\V1\ProductoController;
 
 /*
 |--------------------------------------------------------------------------

@@ -15,7 +15,7 @@ use App\Http\Controllers\ProductoController;
 |
 */
 
-Route::view('/', 'welcome');
 
-//Route::resource('/categorias',CategoriaController::class);  //Crea 7 rutas para el CRUD de categorias
-Route::resource('productos', App\Http\Controllers\ProductoController::class); //Crea 7 rutas para el CRUD de productos
+
+Route::resource('/categorias',CategoriaController::class);  //Crea 7 rutas para el CRUD de categorias
+Route::resource('/productos', ProductoController::class); //Crea 7 rutas para el CRUD de productos

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Models\Producto;
 use Illuminate\Http\Request;
-use App\Http\Controllers\ProductoController;
+
 
 
 
@@ -18,7 +18,7 @@ class ProductoController extends Controller
     public function index()
     {
         return response()->json(Producto::all(), 200); //200: OK
-
+        
        
     }
 
@@ -78,3 +78,4 @@ class ProductoController extends Controller
         return response()->json(['success' => true, 'message' => 'Producto eliminado'], 200);
     }
 }
+
